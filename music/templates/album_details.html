@@ -2,9 +2,12 @@
 
 
 <ul>
-    {% for albums im Album %}
+    <li>
+        {{ musician.name }}
+    </li>
+    {% for song in songs %}
         <li>
-            <a href="/album/{{ album.id }}">{{ album.title }}"</a>
+            <a href="/album/{{ song.id }}">{{ song.name }}"</a>
         </li>
     {% endfor %}
 </ul>
